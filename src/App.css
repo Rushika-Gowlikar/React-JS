@@ -27,7 +27,18 @@
 .App-link {
   color: #61dafb;
 }
-
+.component{
+  position: relative;
+  padding: 20px;
+  color: rgb(71 67 70);
+  text-align: center;
+  background-color: #bdeed2;
+  font-family: cursive;
+  width: auto;
+  font-weight: 900;
+  font-size: larger;
+  height: 700px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
