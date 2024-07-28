@@ -1,0 +1,18 @@
+.home{
+    display: flex;
+    margin: 13px;
+}
+.header-name{
+    padding: 5px 20px;
+    color: rgb(184 213 19);
+    background-color: #0f1ca2;
+    border: 3px solid;
+    border-radius: 9px;
+    font-weight: bold;
+}
+.header-name:hover{
+    color: rgb(177, 250, 68);
+    background-color: cadetblue;
+    /* box-shadow: 2px 5px 10px #bdeed2; */
+    font-weight: bold;
+}
