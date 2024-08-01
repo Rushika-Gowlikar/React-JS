@@ -1,4 +1,11 @@
 .home-page{
-    background-color: rgb(227, 159, 247);
+    background-color: rgb(118, 189, 239);
    
+}
+ul{
+    list-style-type: none;
+}
+.heading{
+    color: blue;
+    background-color: aqua;
 }

@@ -1,4 +1,20 @@
 .learn-page{
     background-color: rgb(220, 209, 159);
+    padding: 30px;
    
+}
+.inputField{
+    height: 30px;
+    width: 200px;
+    border-radius: 3px;
+    border: none;
+    text-align: center;
+
+}
+.inputField:hover{
+    height: 30px;
+    width: 200px;
+    border-radius: 3px;
+    border: 3px solid blue;
+    
 }
