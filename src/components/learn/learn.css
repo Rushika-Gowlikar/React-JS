@@ -18,3 +18,19 @@
     border: 3px solid blue;
     
 }
+.btn{
+    color: blue;
+    border-radius: 6px;
+    border: 1px solid;
+    padding: 7px 22px;
+    background-color: rgb(173, 204, 205);
+
+}
+.btn:hover{
+    color: rgb(173, 204, 205);
+    border-radius: 6px;
+    border: 1px solid;
+    padding: 7px 22px;
+    background-color: blue;
+
+}
