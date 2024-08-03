@@ -1,4 +1,15 @@
 import './art.css'
+import NotePad from './notepad'
+import { useState } from 'react';
 export default function Art(){
-    return (<div className='art-page'>HI, You're Inside Art Component</div>)
+    const [component, goToComponent]= useState(null);
+    function handleClick(){
+        goToComponent(<NotePad/>)
+    }
+    return (<>
+    <div className='notepad' onClick={handleClick}>Note Pad</div>
+    
+    {component}
+    </>
+    )
 }

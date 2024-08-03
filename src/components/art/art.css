@@ -2,3 +2,42 @@
     background-color: rgb(221, 237, 48);
    
 }
+.row{
+    display: flex;
+    justify-content: center;
+    margin: 9px;
+    column-gap: 20%;
+}
+.notepad{
+    display: inline;
+    border: #aaef33;
+    color: #aaef33;
+    padding: 2px 27px;
+    border-radius: 2px;
+    background-color: darkgreen;
+}
+.left{
+    border: 11px solid #efb1aa;
+    height: 230px;
+    width: 330px;
+    word-wrap: break-word;
+    background-color: azure;
+    border-radius: 7px;
+    resize: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(116, 13, 132);
+    font-size: 40px;
+    
+}
+.right{
+    border: 11px solid #799e3a;
+    height: 230px;
+    width: 330px;
+    word-wrap: break-word;
+    background-color: azure;
+    border-radius: 7px;
+    resize: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(45, 83, 132);
+    font-size: 22px;
+}

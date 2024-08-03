@@ -1,0 +1,14 @@
+.board-row{
+    display: flex;
+    justify-content: center;
+}
+
+.square{
+    border: 1px solid rgb(129, 30, 216);
+    background-color: rgb(232, 227, 243);
+    width: 70px;
+    height: 70px;
+     color: rgb(173, 10, 237);
+     font-weight: 600;
+     font-size: 30px;
+}
