@@ -37,7 +37,7 @@
   width: auto;
   font-weight: 900;
   font-size: larger;
-  height: 700px;
+  height: auto;
 }
 @keyframes App-logo-spin {
   from {

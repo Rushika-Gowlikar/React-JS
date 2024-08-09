@@ -2,10 +2,7 @@ import { useEffect, useReducer, useRef, useState } from 'react'
 import './learn.css'
 
 export default function Learn(){
- 
- 
-    
-const [initialValue, setNewValue]= useState("Neo");
+ const [initialValue, setNewValue]= useState("Neo");
 const [state,dispatch]= useReducer(reducer,{age:1});
 const inputRef =useRef(0);
 useEffect(()=>{
