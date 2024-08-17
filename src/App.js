@@ -1,42 +1,36 @@
 
-import { useState } from 'react';
 import './App.css';
 import HeaderContent from './components/header-content';
 import Home from './components/home/home';
-import Welcome from './components/welcome/welcome';
 // import Art from './components/art/art';
 import Learn from './components/learn/learn';
 import Game from './components/game/game';
 import NotePad from './components/art/notepad'
-
+import { Routes, Route } from 'react-router-dom';
 function App() {
-  const [component, goToComponent]= useState(<Welcome/>);
- function handleClickToHome(){
-  goToComponent(<Home/>)
- }
- function handleClickToNotePad(){
-  goToComponent(<NotePad/>)
- }
- function handleClickToLearn(){
-  goToComponent(<Learn/>)
- }
- function handleClickToGame(){
-  goToComponent(<Game/>)
- }
+
+
 
   return (
     <div className="App">
       <header className="App-header">
-     <HeaderContent name="Home" openComponent={handleClickToHome}/>
-     <HeaderContent name="NotePad" openComponent={handleClickToNotePad}/>
-     <HeaderContent name="Learn" openComponent={handleClickToLearn}/>
-     <HeaderContent name="Game" openComponent={handleClickToGame}/>
+        <HeaderContent name="Home" to='/gotoHome' />
+        <HeaderContent name="NotePad" to='/gotoNotepad' />
+        <HeaderContent name="Learn" to='/gotoLearn' />
+        <HeaderContent name="Game" to='/gotoGame' />
       </header>
-    <div className='App-body'>
-      <div className='component'>{component}</div>
+
+      <Routes>
+        <Route path='/gotoHome' element={<Home />}></Route>
+        <Route path='/gotoNotepad' element={<NotePad />}></Route>
+        <Route path='/gotoLearn' element={<Learn />}></Route>
+        <Route path='/gotoGame' element={<Game />}></Route>
+
+      </Routes>
     </div>
-    </div>
-    
+
+
+
   );
 }
 

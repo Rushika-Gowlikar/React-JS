@@ -1,7 +1,9 @@
 import './header-content.css';
-export default function HeaderContent(props){
+import { Link } from 'react-router-dom';
+export default function HeaderContent(props) {
 
     return (<div className="home">
-    <button className="header-name" onClick={props.openComponent}>{props.name}</button>
+        {/* <button ></button> */}
+        <Link className="header-name" to={props.to} onClick={props.openComponent}>{props.name}</Link>
     </div>)
 }
