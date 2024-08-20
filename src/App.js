@@ -7,12 +7,11 @@ import Learn from './components/learn/learn';
 import Game from './components/game/game';
 import NotePad from './components/art/notepad'
 import { Routes, Route } from 'react-router-dom';
+import ProjectManagement from './components/project-management/management';
 function App() {
-
-
-
   return (
     <div className="App">
+
       <header className="App-header">
         <HeaderContent name="Home" to='/gotoHome' />
         <HeaderContent name="NotePad" to='/gotoNotepad' />
@@ -26,6 +25,7 @@ function App() {
         <Route path='/gotoLearn' element={<Learn />}></Route>
         <Route path='/gotoGame' element={<Game />}></Route>
 
+        <Route path="*" element={<ProjectManagement />} />
       </Routes>
     </div>
 

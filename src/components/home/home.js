@@ -2,9 +2,6 @@ import './home.css'
 import Player from './player'
 import TimerChallenge from './timer-challenge'
 export default function Home() {
-
-
-
     return (<div className='home-page'>
         <Player />
         <div className='timer'>

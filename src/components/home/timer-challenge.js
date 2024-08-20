@@ -2,16 +2,16 @@ import './home.css'
 import { useRef, useState } from "react"
 
 export default function TimerChallenge({ title, targetTime }) {
-
+    let timerStatus;
     const [timerExpire, setTimerExpire] = useState(false);
     const timer = useRef(false)
     function handleStart() {
-        timer.current.value = setTimeout(() => {
+        timerStatus = timer.current.value = setTimeout(() => {
             setTimerExpire(true)
         }, targetTime * 1000)
     }
     function handleStop() {
-        clearTimeout(timer.current.value)
+        clearTimeout(timerStatus)
 
     }
     return (<div id="challenge">
