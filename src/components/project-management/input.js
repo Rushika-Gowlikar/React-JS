@@ -1,9 +1,9 @@
 export default function Input({ label, textarea, ...props }) {
     return (
-        <>
-            <p>
-                <label></label>
+        <div >
+            <p >
+                <label className="form-label">{label}</label>
                 {textarea ? <textarea {...props} /> : <input  {...props} />}
-            </p></>
+            </p></div>
     )
 }

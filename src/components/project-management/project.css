@@ -16,3 +16,91 @@
     font-size: larger;
     font-weight: bold;
 }
+.input{
+    padding: 3rem;
+}
+.cancel{
+    
+    color: #112d7c;
+background-color: honeydew ;
+border: 2px double #9871d6;
+border-radius: 5px;
+padding: 12px 32px;
+font-size: larger;
+margin: 3px;
+&:hover{
+    border: 2px double #9871d6;
+    background-color: #afb0b1;
+    color: honeydew;
+    padding: 12px 32px;
+    font-size: larger;
+    border-radius: 5px;
+}}
+.save{
+    
+    color: #112d7c;
+background-color: honeydew ;
+border: 2px double #9871d6;
+border-radius: 5px;
+padding: 12px 32px;
+font-size: larger;
+&:hover{
+    border: 2px double #9871d6;
+    background-color: #1f58f4;
+    color: honeydew;
+    padding: 12px 32px;
+    font-size: larger;
+    border-radius: 5px;
+}
+}
+
+.form-label{
+    font-size: 30px;
+    font-family: cursive;
+    color: #1a2dda;
+    font-weight: bold;
+    padding: 2px 17px;
+}
+input{
+    width: 60%;
+    margin: 3px;
+    font-size: 25px;
+    border: 3px solid rgb(37, 32, 189);
+    height: 34px;
+    border-radius: 4px;
+}
+
+input:hover{
+    width: 60%;
+    margin: 3px;
+    font-size: 25px;
+    border: 3px solid rgb(168, 107, 206);
+    height: 34px;
+    border-radius: 4px;
+}
+
+textarea{
+    width: 60%;
+    margin: 3px;
+    border: 3px solid rgb(37, 32, 189);
+    height: 57px;
+    font-size: 25px;
+    resize: none;
+    border-radius: 4px;
+    
+   
+    &:hover{
+        width: 60%;
+        margin: 3px;
+        border: 3px solid rgb(168, 107, 206);
+        
+        resize: none;
+        
+        border-radius: 4px;
+    }
+}
+.form-fields{
+display: inline-block;
+    text-align: end;
+    width: 838px;
+}

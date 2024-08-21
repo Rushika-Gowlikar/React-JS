@@ -9,6 +9,7 @@
     border: 3px solid;
     border-radius: 9px;
     font-weight: bold;
+    text-decoration: none;
 }
 .header-name:hover{
     color: rgb(177, 250, 68);
