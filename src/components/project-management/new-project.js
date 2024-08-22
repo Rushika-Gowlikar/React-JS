@@ -7,7 +7,7 @@ export default function NewProject() {
             <Input label="Description" textarea />
             <Input label="Due Date" />
         </div>
-        <menu >
+        <menu className="add-project-btn" >
             <button className="cancel">Cancel</button>
             &nbsp;
             <button className="save">Save</button>

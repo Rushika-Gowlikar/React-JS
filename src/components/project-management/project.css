@@ -1,5 +1,5 @@
 .side-bar{
-    width: 315px;
+    width: 295px;
     background-color: #112d7c;
     color: #bc91b8;
     padding: 15px;
@@ -17,38 +17,41 @@
     font-weight: bold;
 }
 .input{
+    width: 800px;
     padding: 3rem;
+
 }
 .cancel{
-    
-    color: #112d7c;
-background-color: honeydew ;
-border: 2px double #9871d6;
-border-radius: 5px;
-padding: 12px 32px;
-font-size: larger;
-margin: 3px;
+    color: white;
+    background-color: #e9e8ea;
+    border: 2px double #9871d6;
+    border-radius: 5px;
+    padding: 5px 21px;
+    font-size: larger;
+    margin: 3px;
+
+
 &:hover{
     border: 2px double #9871d6;
     background-color: #afb0b1;
     color: honeydew;
-    padding: 12px 32px;
+    padding: 5px 21px;
     font-size: larger;
     border-radius: 5px;
 }}
 .save{
     
-    color: #112d7c;
-background-color: honeydew ;
+    color:white;
+background-color: rgb(140, 161, 245) ;
 border: 2px double #9871d6;
 border-radius: 5px;
-padding: 12px 32px;
+padding: 5px 21px;
 font-size: larger;
 &:hover{
     border: 2px double #9871d6;
     background-color: #1f58f4;
     color: honeydew;
-    padding: 12px 32px;
+    padding: 5px 21px;
     font-size: larger;
     border-radius: 5px;
 }
@@ -58,15 +61,17 @@ font-size: larger;
     font-size: 30px;
     font-family: cursive;
     color: #1a2dda;
-    font-weight: bold;
     padding: 2px 17px;
 }
 input{
     width: 60%;
     margin: 3px;
     font-size: 25px;
-    border: 3px solid rgb(37, 32, 189);
+    color: blue;
     height: 34px;
+    background-color: #e4d0ec;
+    border: none;
+    border-bottom: 3px solid blue;
     border-radius: 4px;
 }
 
@@ -74,17 +79,20 @@ input:hover{
     width: 60%;
     margin: 3px;
     font-size: 25px;
-    border: 3px solid rgb(168, 107, 206);
     height: 34px;
+    border: none;
     border-radius: 4px;
 }
 
 textarea{
     width: 60%;
     margin: 3px;
-    border: 3px solid rgb(37, 32, 189);
+    background-color: #e4d0ec;
+    border: none;
     height: 57px;
     font-size: 25px;
+    color: blue;
+    border-bottom: 3px solid blue;
     resize: none;
     border-radius: 4px;
     
@@ -92,7 +100,7 @@ textarea{
     &:hover{
         width: 60%;
         margin: 3px;
-        border: 3px solid rgb(168, 107, 206);
+        border: none;
         
         resize: none;
         
@@ -103,4 +111,19 @@ textarea{
 display: inline-block;
     text-align: end;
     width: 838px;
+}
+.row{
+    display: flex;
+    column-gap: 20%;
+    margin: 0px;
+    justify-content: unset;
+}
+.add-project-btn{
+position: relative;
+left: 295px;
+}
+.notepad-img{
+    width: 80px;
+    height: 80px;
+   
 }
