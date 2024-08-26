@@ -23,7 +23,7 @@
 }
 .cancel{
     color: white;
-    background-color: #e9e8ea;
+    background-color: #afb0b1;
     border: 2px double #9871d6;
     border-radius: 5px;
     padding: 5px 21px;
@@ -33,7 +33,7 @@
 
 &:hover{
     border: 2px double #9871d6;
-    background-color: #afb0b1;
+    
     color: honeydew;
     padding: 5px 21px;
     font-size: larger;
@@ -42,14 +42,14 @@
 .save{
     
     color:white;
-background-color: rgb(140, 161, 245) ;
+    background-color: #1f58f4;
 border: 2px double #9871d6;
 border-radius: 5px;
 padding: 5px 21px;
 font-size: larger;
 &:hover{
     border: 2px double #9871d6;
-    background-color: #1f58f4;
+    
     color: honeydew;
     padding: 5px 21px;
     font-size: larger;
@@ -82,9 +82,10 @@ input:hover{
     height: 34px;
     border: none;
     border-radius: 4px;
+    border-bottom: 3px solid blue;
 }
 
-textarea{
+.textarea{
     width: 60%;
     margin: 3px;
     background-color: #e4d0ec;
@@ -98,12 +99,11 @@ textarea{
     
    
     &:hover{
-        width: 60%;
         margin: 3px;
         border: none;
         
         resize: none;
-        
+        border-bottom: 3px solid blue;
         border-radius: 4px;
     }
 }

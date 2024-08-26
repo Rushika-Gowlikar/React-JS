@@ -18,10 +18,27 @@ export default function ProjectManagement() {
             }
         })
     }
+    function handleSaveDetails(projectDetails) {
+
+        setProjectsStates(previousState => {
+            const newProject = {
+                ...projectDetails,
+                id: Math.floor(Math.random() * 100)
+            }
+
+            return {
+                ...previousState,
+                projects: [...previousState.projects, newProject]
+            }
+        })
+
+    }
+
+    console.log(projectsState)
 
     let content;
     if (projectsState.selectedProjectId === null) {
-        content = <NewProject />
+        content = <NewProject updatedDetails={handleSaveDetails} />
     } else if (projectsState.selectedProjectId === undefined) {
         content = <NoProject onStartAddProject={startHandleProject} />
     }
