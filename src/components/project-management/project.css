@@ -127,3 +127,15 @@ left: 295px;
     height: 80px;
    
 }
+.project-name{
+    background-color: #0d0dc4;
+    padding: 7px 15px;
+    color: whitesmoke;
+    border: 3px solid;
+    margin: 3px;
+    border-radius: 3px;
+    
+}
+.list{
+    padding: 0px;
+}

@@ -27,7 +27,7 @@ export default function ProjectManagement() {
             }
 
             return {
-                ...previousState,
+                ...previousState.selectedProjectId = undefined,
                 projects: [...previousState.projects, newProject]
             }
         })
@@ -43,7 +43,7 @@ export default function ProjectManagement() {
         content = <NoProject onStartAddProject={startHandleProject} />
     }
     return (<div className="row">
-        <div className="col-lg-3"><ProjectSideBar onStartAddProject={startHandleProject} /></div>
+        <div className="col-lg-3"><ProjectSideBar onStartAddProject={startHandleProject} projects={projectsState.projects} /></div>
         <div className="col-lg-9">{content}</div>
 
 
