@@ -25,9 +25,9 @@ export default function NewProject({ updatedDetails }) {
     return (<div className="input">
 
         <div className="form-fields">
-            <Input label="Title" ref={titleRef} />
+            <Input type="text" label="Title" ref={titleRef} />
             <Input label="Description" textarea ref={descriptionRef} />
-            <Input label="Due Date" ref={dateRef} />
+            <Input type="date" label="Date" ref={dateRef} />
         </div>
         <menu className="add-project-btn" >
             <button className="cancel">Cancel</button>
