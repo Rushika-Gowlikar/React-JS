@@ -1,5 +1,5 @@
 import './project.css';
-export default function ProjectSideBar({ onStartAddProject, projects }) {
+export default function ProjectSideBar({ onStartAddProject, projects, onSelectProject }) {
 
     console.log(projects + " projects in progress bar")
     return (<aside className="side-bar">
@@ -11,9 +11,14 @@ export default function ProjectSideBar({ onStartAddProject, projects }) {
         </div>
         <ul className='list'>
             {projects.map((project) => {
-                return <li key={project.key} >
-                    <button className='project-name'>{project.title}</button>
-                </li>
+                // let cssModel;
+                // if (project.id === selectedProjectID) {
+                //     cssModel = "backgroundColor : white"
+                // }
+                return (<li key={project.key} >
+                    <button className='project-name'
+                        onClick={() => onSelectProject(project.id)}>{project.title}</button>
+                </li>)
             }
             )}
         </ul>

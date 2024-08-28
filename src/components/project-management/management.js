@@ -3,6 +3,7 @@ import NewProject from "./new-project";
 import NoProject from "./no-project";
 import './project.css';
 import { useState } from "react";
+import SelectedProject from "./selected-project";
 export default function ProjectManagement() {
 
     const [projectsState, setProjectsStates] = useState({
@@ -18,7 +19,25 @@ export default function ProjectManagement() {
             }
         })
     }
-
+    function handleSelectProject(id) {
+        setProjectsStates(previousState => {
+            return {
+                ...previousState,
+                selectedProjectId: id,
+            }
+        })
+    }
+    function handleDeleteProject() {
+        setProjectsStates(previousState => {
+            return {
+                ...previousState,
+                selectedProjectId: undefined,
+                projects: previousState.projects.filter(project =>
+                    project.id !== previousState.selectedProjectId
+                )
+            }
+        })
+    }
     function cancelAddProject() {
         setProjectsStates(previousState => {
             return {
@@ -44,15 +63,17 @@ export default function ProjectManagement() {
     }
 
     console.log(projectsState)
-
-    let content;
+    const selectedProject = projectsState.projects.find(project => project.id === projectsState.selectedProjectId);
+    console.log(selectedProject)
+    let content = <SelectedProject project={selectedProject} onDelete={handleDeleteProject} />;
     if (projectsState.selectedProjectId === null) {
         content = <NewProject updatedDetails={handleSaveDetails} onCancel={cancelAddProject} />
     } else if (projectsState.selectedProjectId === undefined) {
         content = <NoProject onStartAddProject={startHandleProject} />
     }
+
     return (<div className="row">
-        <div className="col-lg-3"><ProjectSideBar onStartAddProject={startHandleProject} projects={projectsState.projects} /></div>
+        <div className="col-lg-3"><ProjectSideBar onStartAddProject={startHandleProject} projects={projectsState.projects} onSelectProject={handleSelectProject} /></div>
         <div className="col-lg-9">{content}</div>
 
 

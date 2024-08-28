@@ -14,6 +14,7 @@ function App() {
 
       <header className="App-header">
         <HeaderContent name="Home" to='/gotoHome' />
+        <HeaderContent name="Add Project" to='/gotoAddProject' />
         <HeaderContent name="NotePad" to='/gotoNotepad' />
         <HeaderContent name="Learn" to='/gotoLearn' />
         <HeaderContent name="Game" to='/gotoGame' />
@@ -24,6 +25,7 @@ function App() {
         <Route path='/gotoNotepad' element={<NotePad />}></Route>
         <Route path='/gotoLearn' element={<Learn />}></Route>
         <Route path='/gotoGame' element={<Game />}></Route>
+        <Route path="/gotoAddProject" element={<ProjectManagement />} />
 
         <Route path="*" element={<ProjectManagement />} />
       </Routes>
