@@ -139,3 +139,10 @@ left: 295px;
 .list{
     padding: 0px;
 }
+
+dialog{
+    border: 3px solid #9871d6;
+    border-radius: 4px;
+    background-color: #112d7c;
+    color:white;
+}

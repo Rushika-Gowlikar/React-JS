@@ -18,6 +18,15 @@ export default function ProjectManagement() {
             }
         })
     }
+
+    function cancelAddProject() {
+        setProjectsStates(previousState => {
+            return {
+                ...previousState,
+                selectedProjectId: undefined,
+            }
+        })
+    }
     function handleSaveDetails(projectDetails) {
 
         setProjectsStates(previousState => {
@@ -38,7 +47,7 @@ export default function ProjectManagement() {
 
     let content;
     if (projectsState.selectedProjectId === null) {
-        content = <NewProject updatedDetails={handleSaveDetails} />
+        content = <NewProject updatedDetails={handleSaveDetails} onCancel={cancelAddProject} />
     } else if (projectsState.selectedProjectId === undefined) {
         content = <NoProject onStartAddProject={startHandleProject} />
     }
