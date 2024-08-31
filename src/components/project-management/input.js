@@ -5,7 +5,7 @@ const Input = forwardRef(function Input({ label, textarea, ...props }, ref) {
         <div >
             <p >
                 <label className="form-label">{label}</label>
-                {textarea ? <textarea ref={ref} className="textarea" {...props} /> : <input ref={ref}  {...props} />}
+                {textarea ? <textarea ref={ref} className="textarea" {...props} /> : <input className="input-field" ref={ref}  {...props} />}
             </p></div>
     )
 })

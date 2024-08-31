@@ -74,7 +74,7 @@ export default function ProjectManagement() {
 
     return (<div className="row">
         <div className="col-lg-3"><ProjectSideBar onStartAddProject={startHandleProject} projects={projectsState.projects} onSelectProject={handleSelectProject} /></div>
-        <div className="col-lg-9">{content}</div>
+        <div className="col-lg-12">{content}</div>
 
 
     </div>)

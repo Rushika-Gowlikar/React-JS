@@ -20,6 +20,7 @@
     border: 11px solid #efb1aa;
     height: 230px;
     width: 330px;
+    margin: 30px;
     word-wrap: break-word;
     background-color: azure;
     border-radius: 7px;
@@ -33,6 +34,7 @@
     border: 11px solid #799e3a;
     height: 230px;
     width: 330px;
+    margin: 30px;
     word-wrap: break-word;
     background-color: azure;
     border-radius: 7px;
